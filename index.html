@@ -1,1 +1,52 @@
-h
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Jaký je Váš nejoblíbenější song?</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- Already including SweetAlert2 -->
+	<script>
+		function zobraiz () {
+			Swal.fire({
+				title: 'Vyplňte formulář',
+				html: `
+					<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe1eAGbMGEgSe3UZHL6wmeHa7TIRAmhuoiVgXzFfgCgioVwJg/viewform?embedded=true" width="640" height="938" frameborder="0" marginheight="0" marginwidth="0">Načítání…</iframe>
+				`,
+				width: '800px',  // Adjusting the width for better visibility
+				heightAuto: false,
+				showCloseButton: true,
+				showConfirmButton: false, // No need for a confirm button
+				focusConfirm: false
+			});
+		}
+	</script>
+</head>
+
+<body>
+
+	<main>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Spotify_logo_with_color_system.gif" height="120px"
+			alt="Spotify logo animace">
+		<h1>
+			Jaký je Váš nejoblíbenější song?
+		</h1>
+		<a onclick="zobraiz()" class="btn">Vyplnit formulář</a>
+	</main>
+	<article>
+		<h1>Odpovědi z našeho průzkumu:</h1>
+		<iframe class="tabulka"
+			src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQqtr80QMZs7rrHJuiRzEPTAyQwwqFKDsm1hOQpxcJwH3WBsL-wBMg8aKVGHeP_CJL9l4C6ZIRu8Fjs/pubhtml?gid=457187034&amp;single=true&amp;widget=true&amp;headers=false&"></iframe>
+		<br>
+		<h1>
+			Graf počtu hodnocení podle žánru:
+		</h1><iframe width="603" height="373" seamless frameborder="0" scrolling="no"
+			src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQqtr80QMZs7rrHJuiRzEPTAyQwwqFKDsm1hOQpxcJwH3WBsL-wBMg8aKVGHeP_CJL9l4C6ZIRu8Fjs/pubchart?oid=2138172417&amp;format=interactive"></iframe>
+	</article><br><br>
+</body>
+
+</html>

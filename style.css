@@ -1,0 +1,59 @@
+body {
+	background: #b9ffb4;
+	font-family: 'DM Serif Text', 'Segoe UI', Tahoma, Geneva, Verdana, serif;
+	margin: 0;
+}
+
+iframe {
+	border: none;
+	outline: none;
+	border-radius: 15px;
+}
+
+
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: #0f6b4f;
+	color: white;
+	padding: 10px;
+		transition: background 1s linear;
+}
+
+img {
+	height: 120px;
+	text-align: center;
+	border-radius: 15px;
+}
+
+.btn {
+	background:#0a936a;
+color: white;
+text-decoration: none;
+padding: 15px;
+border-radius: 1000px;
+}
+
+.btn:hover {
+		background: #075f45;
+}
+
+article {
+		display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+}
+
+main:hover, main:active {
+	background: #094030;
+	transition: background 1s linear;
+}
+
+.tabulka {
+	width: 300px;
+	height: 200px;
+}
