@@ -35,10 +35,12 @@ color: white;
 text-decoration: none;
 padding: 15px;
 border-radius: 1000px;
+cursor: pointer;
 }
 
 .btn:hover {
 		background: #075f45;
+		cursor: pointer;
 }
 
 article {
